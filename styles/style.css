@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: url(./assents/fundo03.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    
+}
+
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #01282e;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+nav .logo{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+nav .logo img {
+    position: absolute;
+    left: 1rem;
+    top: 0rem;
+}
+
+nav .logo p {
+    font-size: 16px;
+    
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    background: #f88f06;
+}
+
+nav .menu-btn i{
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 920px) {
+    nav .menu-btn i{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #003840;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    nav ul.open{
+        left: 0;
+    }
+    nav ul li{
+        width: 100%;
+        margin: 50px 0;
+    }
+    nav ul li a {
+        font-size: 23px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+        background: none;
+        color: #f88f06;
+    }   
+}
+
+.container {
+    position: relative;
+    top: 300px;
+    left: 50%;
+    right: 50%;
+    width: 400px;
+    background-color: #01282e;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+
+h1  {
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.principal{
+    
+    background-color: #01282e;
+    color: white;
+    border-radius: 12px;
+    padding: 1rem;
+    max-width: 800px;
+    margin: 1rem auto;
+    text-align: center;
+
+}
+
+table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+      text-align: left;
+      
+}
+
+/* Estilo para as bordas */
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Cor de fundo para o cabeçalho */
+th {
+    background-color: #f88f06;
+    color: #003840;
+    text-align: center;
+}
+
+/* Centralizar o texto */
+caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+input {
+    width: 200px;
+    height: 30px;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+select {
+    width: 200px;
+    height: 30px;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+button {
+    width: 200px;
+    height: 30px;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 5px;
+    background: #f88f06;
+    color: #003840;
+    
+    
+}
+
+.section {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+.equipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.equipe {
+    
+    background-color: #01282e;
+    color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.img-painel {
+    width: 70px;
+    border-radius: 10px;
+}
+
