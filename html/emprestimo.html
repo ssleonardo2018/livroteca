@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Empréstimos</title>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="../assents/admin.png" alt="admin" width="80px" height="80px">LIVROTECA<p>Administrador</p></div>
+
+        <div class="menu-btn">
+            <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+        </div>
+
+        <ul>
+            <li> <a href="dashboard.html"> Painel </a> </li>
+            
+            <li> <a href="livros.html" >Livros</a> </li>
+            <li> <a href="emprestimo.html" class="active">Empréstimos</a> </li>
+            <li> <a href="usuarios.html">Usuários</a> </li>
+            <li> <a href="../login.html">Sair</a> </li>
+        </ul>
+    </nav>
+    <section class="section" id="equipe">
+    
+    <div class="equipes">
+      <div class="equipe">
+        <h2>EMPRÉSTIMOS</h2>
+      <form action="">
+        
+        <br>
+        
+       
+        <select id="opcoes" name="opcoes">
+            <option value="opcao1">Título</option>
+            <option value="opcao2">Autor</option>
+        </select>
+        <button type="submit">PESQUISAR</button>
+        <input type="search" placeholder="Digite aqui sua pesquisa...">
+        <button type="submit">REGISTRAR</button>
+        <br>
+        <input type="text" placeholder="Adicione o Usuário...">
+        <button type="reset">LIMPAR</button>
+        <br>
+        <select name="" id="">
+          <option value="">EMPRESTAR</option>
+          <option value="">DEVOLVER</option>
+        </select>
+        <input type="datetime-local">
+        
+        <br>
+      
+      </form>
+        
+        
+      </div>
+      <div class="equipe">
+        <table>
+        
+        <thead>
+          <tr>
+            <th>TÍTULO</th>
+            <th>AUTOR</th>
+            <th>QUANTIDADE</th>
+            <th>STATUS</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Especialista em Pessoas</td>
+            <td>Tiago Brunet</td>
+            <td>1</td>
+            <td>Leo</td>
+            
+          </tr>
+          <tr>
+            <td>O Poder da Educação Financeira</td>
+            <td>Robert T. Kiyosaki</td>
+            <td>1</td>
+            <td>Leo</td>
+          </tr>
+        </tbody>
+      </table>
+       
+      </div>
+
+     
+
+    
+
+    </div>
+  </section>
+    
+    
+    <script src="../scripts/main.js"></script>
+</body>
+</html>
