@@ -216,6 +216,16 @@ button {
     box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
+.equipe1 {
+    
+    background-color: #01282e;
+    color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    overflow: auto;
+}
+
 .img-painel {
     width: 70px;
     border-radius: 10px;
